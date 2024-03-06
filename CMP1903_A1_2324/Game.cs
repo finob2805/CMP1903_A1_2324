@@ -9,21 +9,21 @@ namespace CMP1903_A1_2324
     internal class Game
     {
         // creates 3 die objects
-        Die Die_1 = new Die();
-        Die Die_2 = new Die();
-        Die Die_3 = new Die();
+        Die Die1 = new Die();
+        Die Die2 = new Die();
+        Die Die3 = new Die();
 
         public int[] DiceStatsAndReport()
         {
-            int[] diceRoll_List = {Die_1.DiceRoll(), Die_2.DiceRoll(), Die_3.DiceRoll()}; // creates array for storing the number that comes from the rolls
-            int sum = 0; // create sum variable
-            for (int count = 0; count <=2; count++) // for loop goes through the array and adds up dice rolls
+            int[] DiceRollList = {Die1.DiceRoll(), Die2.DiceRoll(), Die3.DiceRoll()}; // creates array for storing the number that comes from the rolls
+            int Sum = 0; // create sum variable
+            for (int Count = 0; Count <=2; Count++) // for loop goes through the array and adds up dice rolls
             {
-                sum = sum + diceRoll_List[count];
-                Console.WriteLine("This die (" + (count+1) + ") rolled " + diceRoll_List[count]); // outputs what the die rolled
+                Sum = Sum + DiceRollList[Count];
+                Console.WriteLine("This die (" + (Count+1) + ") rolled " + DiceRollList[Count]); // outputs what the die rolled
             }
-            Console.WriteLine("The total of the 3 rolls was " + sum); // outputs sum of rolls
-            return diceRoll_List; // returns the list
+            Console.WriteLine("The total of the 3 rolls was " + Sum); // outputs sum of rolls
+            return DiceRollList; // returns the list
         }
 
     }

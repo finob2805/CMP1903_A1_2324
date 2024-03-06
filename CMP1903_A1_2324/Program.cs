@@ -11,10 +11,10 @@ namespace CMP1903_A1_2324
     {
         static void Main(string[] args)
         {   
-            Game play_game = new Game(); //creates game object
-            play_game.DiceStatsAndReport(); //calls method
-            Testing gameTest = new Testing(); // creates testing object
-            gameTest.testing(); // calls method
+            Game PlayGame = new Game(); //creates game object
+            PlayGame.DiceStatsAndReport(); //calls method
+            Testing GameTest = new Testing(); // creates testing object
+            GameTest.TestingGame(); // calls method
         }
     }
 }
