@@ -8,7 +8,7 @@ namespace CMP1903_A1_2324
 {
     internal class Die // creates Die class
     {
-        public int CurrentDieValue;  
+        private int CurrentDieValue;  
         public int DiceRoll() // randomises a roll between 1 and 6 and then returns said roll in CurrentDieValue
         {
             Random RandomOneToSix = new Random();
